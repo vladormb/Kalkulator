@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program za obavljanje osnovnih aritmetičkih operacija</title>
+</head>
+
+<body>
+    <script>
+        var a = prompt("Molim vas, unesite prvi broj:");
+        var b = prompt("Molim vas, unesite računsku operaciju (+, -, *, /):");
+        var c = prompt("Molim vas, unesite drugi broj:");
+
+
+        if (b === "+") {
+            var rezultat = parseInt(a) + parseInt(c);
+        } else if (b === "-") {
+            var rezultat = parseInt(a) - parseInt(c);
+        } else if (b === "*") {
+            var rezultat = parseInt(a) * parseInt(c);
+        } else if (b === "/") {
+            var rezultat = parseInt(a) / parseInt(c);
+        } else {
+            rezultat = "Niste uneli ispravnu računsku operaciju";
+        }
+
+
+        alert("Tačan rezultat je: " + rezultat);
+
+        location.reload();
+    </script>
+
+
+
+</body>
+
+</html>
